@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jt-manage/jt-manage-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jt-web" />
+    <file type="web" url="file://$PROJECT_DIR$/jt_manage/jt_manage_web" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/jt_manage/pom.xml" />
+        <option value="$MAVEN_REPOSITORY$/com/jt/parent/jt-parent/0.0.1-SNAPSHOT/jt-parent-0.0.1-SNAPSHOT.pom" />
+        <option value="$PROJECT_DIR$/jt-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-common/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/jt-web/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

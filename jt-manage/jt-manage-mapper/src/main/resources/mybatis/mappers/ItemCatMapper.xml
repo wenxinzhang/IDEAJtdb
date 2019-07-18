@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- 接口文件所在的路径地址 -->
+<mapper namespace="com.jt.manage.mapper.ItemCatMapper">
+	<!-- 基础的CRUD操作的SQL都不用写了，通用MAPPER+JPA实现了 -->
+	<!-- 特殊的语句必须自己实现 -->
+	<select id="queryItemCatListByParentId" parameterType="int" resultType="ItemCat">
+SELECT * FROM tb_item_cat WHERE parent_id = #{pid}
+	</select>
+</mapper>  

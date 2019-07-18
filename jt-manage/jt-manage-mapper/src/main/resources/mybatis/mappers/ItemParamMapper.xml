@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.jt.manage.mapper.ItemParamMapper">
+	<!-- 在商品的规格中有无引用当前这几个规格参数 -->
+	<select id="queryItemParamItemCount" parameterType="map" resultType="int">	
+SELECT COUNT(*) FROM tb_item_param_item
+WHERE item_id IN
+(
+	SELECT id FROM tb_item WHERE cid IN
+	(
+	SELECT item_cat_id FROM tb_item_param WHERE id IN (
+		<foreach collection="ids" item="id" separator=",">
+			#{id}
+		</foreach>
+		)
+	)
+)
+	</select>
+
+</mapper>  
